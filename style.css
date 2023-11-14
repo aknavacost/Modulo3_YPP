@@ -1,0 +1,94 @@
+/*Selectores por etiqueta*/
+/*Aplica los estilos a todas las etiquetas nombradas en general*/
+
+img{
+    width: 100px;
+    /*Podemos aplicar borde-radius 50% para una foto de perfil redondeada*/
+    border-radius: 5px;
+}
+p{
+    color: darkblue;
+}
+/*Aplicar "RESET DE ESTILOS" (Resetear los estilos predeterminados del navegador)para eliminar espacios en blanco*/
+body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+h1{
+    font-size: 20px;
+}
+
+/*Selectores por clase*/
+/*Aplica los estilos solo a las etiquetas que sean nombradas*/
+/*Los selectores por clase se nombran con  (.)*/
+/*Todos los elemtos que esten nombrados con la misma class, se aplicaran todas las caracteristicas*/
+.logo{
+    border: 2px solid darkblue;
+}
+.container-logo-title{
+    display: flex;
+    /*Dirección principal/Acomodara los elementos(vertical) en la dirección actual de FLEX*/
+    /*Mismo espacio proporcional entre logo y title*/
+    justify-content:space-around;
+    /*Acomodara los elemantos en horizontal*/
+    /*Alinear titulo con el logo*/
+    align-items:center ;
+}
+
+/*Selector por ID*/
+/*Aplica los estilos solo a las etiquetas que sean nombradas/NO SE REPITE/ES UNICO ID*/
+/*Los selectores por clase se nombran con  (#)*/
+#Modulo-Yo-puedo-programar{
+background-color: beige;
+}
+
+/*Selectores combinados/Selector de descendencia*/
+/*Aplicar estilos en elementos que estan dentro de etiquetas*/
+/*Los selectores por clase se nombran con  (#)*/
+
+#Modulo-Que-es-el-desarrollo-web >p {
+    color: grey;
+}
+
+/*Cunado utilizamos (>) Especificamos a que etiqueta se aplicaran las caracteristicas*/
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Quitar los puntos de la lista con list-style-type*/
+nav li{
+    list-style-type: none;
+}
+
+/*Aplicar caracteristicas a los elementos de la barra de navegación*/
+/*Quitar subrayado con text-decoration*/
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+/*SEUDOELEMENTOS de CSS*/
+/*Cambia el color de los elementos mientras pasamos el color HOVER*/
+/*transform puede resaltar el titulo a una escla mas grande*/
+/*transition puede definir el tiempo de la transición*/
+
+nav a:hover{
+    color:#3a4e48;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+/*Etiquetas semanticas*/
+header{
+    color: #3a4e48;
+    /*Indica la dirección de los elementos*/
+    display: flex;
+    /*Indicara la posición de los elementos*/
+    flex-direction:column;
+}
+
+nav{
+    margin: 10px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html> <!--Etiqueta de apertura-->
+<html lang="en"> <!--Indica el lenguaje es/en español/ingles-->
+<head> <!--Colocar links de archivos, configuraciones especificas-->
+    <meta charset="UTF-8">  <!--charset-interpreta el navegador/indicamos como debe codificarlo
+                               UTF8-Codificar caracteres como signos de puntuación(, . ' ñ)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <!--Define como queremos que se muestre nuestro archivo sin importar nuestro dispositivo
+                                Hace responsivo nuestro sitio-->
+    <!--Vincular archivo CCS con codigo HTML-->                          
+    <link rel="stylesheet" href="./styles.css">
+    <title>Yo puedo Programar</title>  <!--Titulo del nombre que se visualiza en la tab del navegador -->
+</head>
+<body><!--Contenido de la pagina web-->
+
+    <!--Herramientas semanticas HTML-->
+    
+    <header>
+        <!--Crear un DIV para separar logo y nombre de la pagina de la barra de navegación-->
+        <div class="container-logo-title">
+            <img class="logo"  src="./Images/logoja.jpeg" alt="Logo YPP" ">
+            <!--Agregando una imagen/La etiqueta img NO TIENE ETIQUETA DE CIERRE-->
+           <!--scr-referenciar la imagen desde donde la tenemos guardada-->
+           <!--alt-Muestra texto en caso de que no se visualize tu imagen-->
+           <!--Width-aributo que permite definir el tamaño de la imagen-->
+           <h1>YO PUEDO PROGRAMAR</h1>        <!--Buena practica:En un archivo html, solo puede existir 
+                                                una etiqueta h1-->
+           <!--Agregando una imagen/La etiqueta img NO TIENE ETIQUETA DE CIERRE-->
+           <!--scr-referenciar la imagen desde donde la tenemos guardada-->
+           <!--alt-Muestra texto en caso de que no se visualize tu imagen-->
+           <!--Width-aributo que permite definir el tamaño de la imagen-->
+        </div>
+        <!--Insertando barra de navegación-->
+    <nav>
+        <ul>
+            <!--Enlazando nuestra barra de navegación con los apartados dentro de nuestra pagina web-->
+            <!--#manda a llamar un identificador-->
+            <!--Utilizar(-)en lugar de espacios-->
+            <a href="#Modulo-Yo-puedo-programar">
+                <li>Yo puedo programar</li>
+            </a>
+            <a href="#Modulo-¿Que-es-el-desarrollo-web?">
+                <li>¿Que es el desarrollo web?</li>
+            </a>
+            <a href="#Modulo-¿Que-aprenderemos?">
+                <li>¿Que aprenderemos?</li>
+            </a>
+            <a href="#Modulo-¿Como-creamos-nuestro-sitio-web?">
+                <li>¿Como creamos nuestro sitio web?</li>
+            </a>
+        </ul>
+    </nav>
+    </header>
+
+    <!--Herramienta semantica para apartado de información -->
+    <main>
+    <!--DIV- Separadores invisibles- Herramienta semantica de agrupacion de etiquetas-->
+    <!--La semantica dan estructura a nuestro contenido-->
+        <!--ID-Identificador unico/no se puede repetir-->
+        <div id="Modulo-Yo-puedo-programar">
+            <h2>Yo puedo programar</h2>
+            <!--Agregando parrafos y Titulos-->
+            <p>
+               Podras desarrollar ti primer sito web en solo 6 sesiones, conociendo los fundamentos basicos
+               del desarrollo web. 
+            </p>
+        
+            <!--Agregando una imagen copiando su dirreción-->
+            <!--No recomendable porque es propiedad externa esta sujeta a cambios de existencia de donde la descargamos-->
+            <img src="https://www.itconsultors.com/images/blog/web-dev.jpg" alt="">
+        </div>
+    
+        <div id="Modulo-Que-es-el-desarrollo-web">
+             <!--Agregando enlaces-->
+            <!--Enlazar un enlace con un tutilo -->
+            <a href="https://www.coderhouse.com.mx/blog/que-es-el-desarrollo-web"><h2>Desarrollo Web</h2></a>
+            <p>
+                Los participantes deberan de ayudarte a formar el concepto que ellos tienen de Desarrollo web
+            </p>
+             <!--Añadir un enlace a nuestro sito web-->
+            <!--Etiqueta target-Nos da la opción de como queremos abrir el enlace (blank)Abre el link en otra pestaña-->
+            <a href="https://www.coderhouse.com.mx/blog/que-es-el-desarrollo-web" target="_blank">Click aquí</a>
+        </div>
+   
+        <div id="Modulo-¿Que-aprenderemos?">
+            <h3>¿Que aprenderemos?</h3>
+            <!--Añadiendo listas desordenadas-->
+            <ul>
+                <li>Codigo HTML</li>
+                <li>Codigo CSS</li>
+                <li>Codigo JavaScript</li>
+            </ul>
+        </div>
+        
+        <div id="Modulo-¿Como-creamos-nuestro-sitio-web?">
+            <h3>¿Como creamos nuestro sitio web?</h3>
+            <!--Añadiendo listas ordenadas-->
+            <ol>
+                <li>Crear carpeta en nuestro dispositivo</li>
+                <li>Seleccionar nuestra carpeta en Visual Studio y crear un archivo llamado Index </li>
+                <li>Comenzamos a añadir nuestar etiqueta de apertura html5</li>
+            </ol>
+        </div>    
+    </main>
+
+    <!--Herramienta semantica FOOTER-Pie de pagina-->
+    <!--Contiene
+          -Contacto
+          -Aviso de Privacidad
+          -Derechos reservados-->
+    <footer>
+        <p> Derechos Reservados.Yo puedo programar 2023</p>
+        <p> Realizado por Ana Karen Navarro </p>
+    </footer>
+</body>
+</html> <!--Etiqueta de cierre-->
